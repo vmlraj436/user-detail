@@ -1,2 +1,7 @@
-# user-detail
-User Detail Fetch task react js Eastvantage
+Run this commend step by step:
+
+cd user-app
+
+npm install
+
+npm start
