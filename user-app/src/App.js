@@ -2,6 +2,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import BoxGenerator from "./pages/squarebox/Boxgrid";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>          
-          <Route index element={<Home />} />
+          <Route index element={<BoxGenerator />} />
+          <Route path="user-detail" element={<Home />} />
           <Route path="*" element={<NoPage />} />          
         </Routes>
       </BrowserRouter>
